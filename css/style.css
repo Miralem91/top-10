@@ -152,18 +152,17 @@
 /*HEADER MOBILE START*/
 
 .navbar-brand img {
-    width: 240px;
+    width: 220px;
     height: 24.58px;
 }
-
-
-/* hide close when burger shown */
 
 .navbar-toggler.collapsed .close-icon {
     display: none;
     color: #111;
     font-size: 25px;
     opacity: 1;
+    position: absolute;
+    right: 0;
 }
 
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
@@ -197,13 +196,13 @@
     font-size: 16px;
     box-sizing: border-box;
     color: white;
-    height: 70px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
 }
 
 .flagie {
     min-height: 55px;
-    min-width: 80px;
+    min-width: 70px;
     line-height: 12px;
     white-space: normal;
     vertical-align: middle;
@@ -339,6 +338,7 @@
     margin: 0;
     background-color: white;
     border: none !important;
+    padding-left: 10px;
 }
 
 #accordion .panel-heading {
@@ -354,11 +354,12 @@
     width: 100%;
     text-align: left;
     padding-bottom: 20px;
+    padding-left: 10px;
     font-weight: 500;
     position: relative;
     transition: all 0.3s ease 0s;
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     border-bottom: 1px solid rgba(119, 119, 119, 0.938);
     text-decoration: none!important;
 }
@@ -366,8 +367,9 @@
 #accordion .panel-title a.collapsed {
     color: #111;
     text-decoration: none!important;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500 !important;
+    padding-right: 10px;
 }
 
 #accordion .panel-title a::after,

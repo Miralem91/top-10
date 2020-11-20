@@ -379,7 +379,7 @@
     font-family: fontawesome;
     font-size: 18px;
     height: 55px;
-    right: 10px;
+    right: 0px;
     line-height: 35px;
     position: absolute;
     text-align: right !important;
@@ -636,7 +636,7 @@
     .faq-div {
         display: block;
         padding-top: 10px;
-        width: 50%;
+        width: 80%;
         margin: 0 auto;
     }
     .faq-title {
@@ -735,23 +735,76 @@
     .black-name:hover {
         opacity: 0;
     }
+    /*COLLAPSE*/
+    #accordion .panel {
+        margin: 0;
+        background-color: white;
+        border: none !important;
+        padding-left: 10px;
+    }
+    #accordion .panel-heading {
+        padding: 0;
+        background-color: white;
+        border: none !important;
+        width: 100%;
+    }
+    #accordion .panel-title a {
+        color: #111;
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        font-weight: 500;
+        position: relative;
+        transition: all 0.3s ease 0s;
+        text-align: left;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(119, 119, 119, 0.938);
+        text-decoration: none!important;
+    }
+    #accordion .panel-title a.collapsed {
+        color: #111;
+        text-decoration: none!important;
+        font-size: 16px;
+        font-weight: 500 !important;
+        padding-right: 10px;
+    }
+    #accordion .panel-title a::after,
+    #accordion .panel-title a.collapsed::after {
+        color: #111;
+        content: '\f068';
+        font-family: fontawesome;
+        font-size: 18px;
+        height: 55px;
+        right: 10px;
+        line-height: 35px;
+        position: absolute;
+        text-align: right !important;
+        top: -5px;
+        transition: all 0.3s ease 0s;
+        width: 55px;
+        float: right !important;
+        text-decoration: none!important;
+        font-weight: 300 !important;
+    }
+    #accordion .panel-title a.collapsed::after {
+        content: '\f067';
+        color: #111;
+        font-weight: 300;
+        font-size: 16px;
+        font-weight: 300 !important;
+    }
+    #accordion .panel-body {
+        padding: 10px 0px 0px 9px;
+        position: relative;
+    }
+    #accordion .panel-body p {
+        padding-left: 0px;
+        font-size: 16px;
+    }
+    /*COLLAPSE ENDS*/
 }
 
 
 /*MID DEVICE-ENDS*/
-
-
-/*PROJECT 2 START*/
-
-
-/*PROJECT 2 DESKTOP START*/
-
-@media only screen and (min-width: 767px) {
-    .sidebar-img {
-        display: block !important;
-        max-width: 50px;
-    }
-}
-
-
-/*PROJECT 2 ENDS*/

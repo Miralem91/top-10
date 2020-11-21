@@ -4,6 +4,12 @@
     font-family: "Rubik", sans-serif;
 }
 
+.nav-link {
+    color: black;
+    font-weight: 600;
+    opacity: 1;
+}
+
 
 /*BACK TO TOP BTN*/
 
@@ -574,6 +580,10 @@
 /*MID DEVICE-START*/
 
 @media only screen and (min-width: 767px) {
+    .navbar-brand img {
+        width: 280px;
+        height: 24.58px;
+    }
     .nav-item {
         font-size: 16px;
         color: black;
